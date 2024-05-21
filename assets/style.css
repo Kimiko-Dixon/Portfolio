@@ -5,50 +5,65 @@
 }
 
 header {
-    background-color: #494949;
+    /* background-image: linear-gradient(
+        90deg, #020024 0%, #090979 35%, #00d4ff 100%   
+    ); */
+    background-color: #000000;
     height: 5em;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 h1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* background-color: #fff; */
+   font-size: 35px;
+   
 }
 
-/* nav {
-    display: flex;
-} */
-
+nav {
+    padding-right: 1%;
+}
 nav ul li {
    display: inline;
    padding: 5px;
    position: relative;
-   left:75%;
 }
 
-main {
-    /* display: inline-block; */
+#name {
+    padding: 1%;
+    background-color: #00d4ff;
+}
+nav ul li a {
+    color: #fff;
 }
 
-section {
-    padding: 25px 0 25px 0;
-}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3% 3% 3% 0;
+ }
 
 h2 {
-    display: inline-block;
-    width: 20%;
-    text-align: right;
-    padding-right: 15px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: min-content;
+    margin-left: 8% ;
     font-size: 30px;
+    border-right: 1% solid #000000;
 }
-
-.float-content {
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 80%;
-    border-left: 5px solid black;
-    float: inline-end;
-    padding-left: 25px;
+    position: relative;
+    margin-left: 20%;
+    margin-top: -4em;
+    border-left: .3em solid #000000;
+    padding-left: 1em;
 }
 
 #hero {
@@ -56,16 +71,22 @@ h2 {
     height: 80px;
     background-image: linear-gradient(
         90deg, #020024 0%, #090979 35%, #00d4ff 100%   
-    )
+    );;
+    background-size: cover;
+}
+#Contact-Me ul li {
+   display: inline-flex;
+   padding: 5px;
+   position: relative;
+   align-items: center;
+   height: 4em;
+   font-size: 20px;
+   text-transform:uppercase;
 }
 
-/* #Work h2 + img {
-    display: flex;
-    flex: 2 0 100%;
+#Contact-Me ul li a{
+    color:#000000;
+    font-weight: bold;
 }
 
-img {
-    display: flex;
-    flex: 1 0 50%;
-} */
 
